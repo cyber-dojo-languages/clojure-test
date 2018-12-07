@@ -11,6 +11,12 @@
 
   "image_name": "cyberdojofoundation/clojure_clojure_test",
 
+  "hidden_filenames": [
+    "\\.lein-failures",
+    "target/classes/META-INF/maven/.*/pom\\.properties",
+    "target/stale/leiningen\\.core\\.classpath\\.extract-native-dependencies"
+  ],
+
   "runner_choice": "stateless",
 
   "max_seconds": 15,
