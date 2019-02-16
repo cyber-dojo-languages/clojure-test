@@ -17,8 +17,6 @@
     "target/stale/leiningen\\.core\\.classpath\\.extract-native-dependencies"
   ],
 
-  "runner_choice": "stateless",
-
   "max_seconds": 15,
 
   "filename_extension": ".clj",
