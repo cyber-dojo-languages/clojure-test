@@ -1,4 +1,3 @@
-
 [![CircleCI](https://circleci.com/gh/cyber-dojo-languages/clojure-test.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/clojure-test)
 
 ## display_name="Clojure, clojure.test"
