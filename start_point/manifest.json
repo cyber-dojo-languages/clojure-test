@@ -1,25 +1,19 @@
 
 {
+  "image_name": "cyberdojofoundation/clojure_clojure_test",
   "display_name": "Clojure, clojure.test",
-
   "visible_filenames": [
     "hiker_test.clj",
     "hiker.clj",
     "cyber-dojo.sh",
     "project.clj"
   ],
-
-  "image_name": "cyberdojofoundation/clojure_clojure_test",
-
+  "filename_extension": [ ".clj" ],
+  "max_seconds": 15,
+  "tab_size": 2,
   "hidden_filenames": [
     "\\.lein-failures",
     "target/classes/META-INF/maven/.*/pom\\.properties",
     "target/stale/leiningen\\.core\\.classpath\\.extract-native-dependencies"
-  ],
-
-  "max_seconds": 15,
-
-  "filename_extension": ".clj",
-
-  "tab_size": 2
+  ]
 }
