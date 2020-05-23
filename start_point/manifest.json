@@ -10,11 +10,5 @@
   ],
   "filename_extension": [ ".clj" ],
   "max_seconds": 20,
-  "tab_size": 2,
-  "hidden_filenames":
-  [
-    "\\.lein-failures",
-    "target/classes/META-INF/maven/.*/pom\\.properties",
-    "target/stale/leiningen\\.core\\.classpath\\.extract-native-dependencies"
-  ]
+  "tab_size": 2
 }
