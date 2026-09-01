@@ -1,3 +1,17 @@
-FROM ghcr.io/cyber-dojo-languages/clojure:9a28837
+FROM ghcr.io/cyber-dojo-languages/clojure:9d29387
 LABEL maintainer=frederic.merizen@soft-xki.com
 LABEL maintainer=jon@jaggersoft.com
+
+COPY project.clj /tmp
+
+# A kata's test run reads both of the files this leaves behind. It replays the
+# archive instead of loading the same classes from the jars again, and it takes
+# the classpath as given instead of starting lein to ask for it. The script
+# explains which classes and why.
+COPY throwaway_kata.clj /tmp
+COPY bake_classpath_and_cds_archive.sh /tmp
+RUN bash /tmp/bake_classpath_and_cds_archive.sh \
+ && rm /tmp/bake_classpath_and_cds_archive.sh /tmp/throwaway_kata.clj /tmp/project.clj
+
+# Run by cyber-dojo.sh, which names the kata's test files on the command line.
+COPY run_test_files.clj /
